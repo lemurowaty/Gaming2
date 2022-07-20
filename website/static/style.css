@@ -1,0 +1,67 @@
+:root {
+    --color1 : #222831;
+    --color2 : #393E46;
+    --color3 : #00ADB5;
+    --color4 : #EEEEEE;
+
+    --color3-hover: #018086;
+    --color2-hover : #62656b;
+    --color-fail: rgb(170, 0, 0);
+
+    --main-font: 'Josefin Sans', sans-serif;
+}
+
+.message {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 10px;
+  display: inline-block;
+}
+
+.user-name {
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* column, row*/
+    flex-wrap: wrap;
+    justify-content: center; /*flex-start flex-end center space-between space-around space-evenly*/
+    /*  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;*/
+    align-items: stretch;
+    /*  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;*/
+    align-content: center;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.flex-item {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 10px;
+    background: var(--color2);
+    color: var(--color4);
+
+    font-family: var(--main-font);
+
+    padding: 5px;
+}
+
+.game-img {
+    width: 190px;
+    height: 190px;
+    border-radius: 15px;
+}
+
+#basket {
+    background: red;
+    position: fixed;
+    width: 100%;
+    display: none;
+}

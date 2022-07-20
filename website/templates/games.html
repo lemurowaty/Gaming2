@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Gry{% endblock %}
+
+
+{% block body %}
+
+<div>
+    <div>
+        <label for="search">Szukaj</label>
+        <input id="search" class="form-control">
+    </div>
+    <div>
+        <label for="priceMin">Cena min</label>
+        <input type="number" id="priceMin" class="form-control">
+        <label for="priceMax">Cena max</label>
+        <input type="number" id="priceMax" class="form-control">
+    </div>
+
+    <button id="searchButton" class="btn btn-primary">Szukaj</button>
+</div>
+
+<div class="flex-container" id="games"></div>
+
+{% endblock %}
+
